@@ -2,8 +2,8 @@
 FROM alpine:edge
 
 # 维护者信息
-LABEL maintainer "a76yyyy <q981331502@163.com>"
-LABEL org.opencontainers.image.source=https://github.com/qd-today/ddddocr-docker
+LABEL maintainer "oneisall8955 <oneisall8955@gmail.com>"
+LABEL org.opencontainers.image.source=https://github.com/oneisall8955/ddddocr-docker-fork
 ARG TARGETPLATFORM
 
 ARG APK_MIRROR=""  #e.g., https://mirrors.tuna.tsinghua.edu.cn
