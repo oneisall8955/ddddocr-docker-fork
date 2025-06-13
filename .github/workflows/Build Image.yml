@@ -1,11 +1,15 @@
 name: Publish Package
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag to build'
+        required: false
+        default: 'latest'
   push:
-    paths-ignore:
-      - '.github/**'
-      - '**.md'
-    tags: ["*"]
+    tags: 
+      - 'v*'
+      - '*'
 
 jobs:
   build:
