@@ -1,13 +1,14 @@
-# **ddddocr-Docker**
+# **ddddocr-docker-fork**
+> fork from : https://github.com/qd-today/ddddocr-docker
+> 
+> original hub: https://hub.docker.com/r/a76yyyy/ddddocr
 
 ## **Repository**
 
-**Github :** [https://github.com/qd-today/ddddocr-docker](https://github.com/qd-today/ddddocr-docker)
-
-**DockerHub :** [https://hub.docker.com/r/a76yyyy/ddddocr](https://hub.docker.com/r/a76yyyy/ddddocr)
+**DockerHub :** [https://hub.docker.com/r/oneisall8955/ddddocr](https://hub.docker.com/r/oneisall8955/ddddocr)
 
 ```bash
-docker pull a76yyyy/ddddocr:latest
+docker pull oneisall8955/ddddocr:latest
 ```
 
 ## **VERSION**
