@@ -37,10 +37,16 @@ jobs:
       name: Docker meta
       uses: docker/metadata-action@v5
       with:
-        images: |
-          name=docker.io/oneisall8955/ddddocr,enable=${{ steps.login-dockerhub.outcome == 'success' }}
+        images: docker.io/oneisall8955/ddddocr
         tags: |
+          # 对于标签推送
           type=ref,event=tag
+          # 对于手动触发
+          type=raw,value={{inputs.tag}},enable=${{ github.event_name == 'workflow_dispatch' }}
+          # 默认latest标签
+          type=raw,value=latest,enable=${{ github.event_name == 'workflow_dispatch' && inputs.tag == 'latest' }}
+        flavor: |
+          latest=auto
     -
       name: Publish Latest Package
       uses: docker/build-push-action@v5
